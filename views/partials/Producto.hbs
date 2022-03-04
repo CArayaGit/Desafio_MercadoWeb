@@ -3,15 +3,19 @@
     <img src="/img/{{item}}.png" class="card-img-top" alt="Banana">
     <div class="card-body">
         <h5 class="card-title">{{item}}</h5>
-        {{!-- <select id="cantidad" class="form-select my-2" aria-label="Default select example">
-            <option selected>Cantidad:</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-        </select> --}}
-        <button type="button" class="btn btn-primary" data-fruta="{{item}}" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar</button>
+        
+        <form>
+            <fieldset enabled>
+                <div class="mb-3">
+                <input type="text" id="cantidad" data-cantidad="{{item}}" class="form-control" placeholder="Cantidad">
+                </div>
+                <div class="mb-3">
+                </div>
+                <button type="button" class="btn btn-primary" data-fruta="{{item}}" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar</button>
+            </fieldset>
+        </form>
+
+        {{!-- <button type="button" class="btn btn-primary" data-fruta="{{item}}" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar</button> --}}
     </div>
     </div>
 

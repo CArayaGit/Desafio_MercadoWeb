@@ -17,7 +17,7 @@ app.set('views', './views');
 app.get('/', (req, res) => {
     const productos = ["banana", "cebollas", "lechuga", "papas", "pimenton", "tomate"];
 
-    res.render('home', { productos:productos });
+    res.render('home', { productos });
 });
 
 
